@@ -10,7 +10,7 @@ import java.util.*;
  *
  * @author eiwei
  */
-public class Lab01 {
+public class Stamp {
 
     /**
      * @param args the command line arguments
