@@ -19,8 +19,11 @@ public class BankAccount {
          if (type == 'A' | type == 'C'){
              percent = money * 0.015;
              money += percent;
-         }else if (type == 'B' | type == 'X'){
+         }else if (type == 'B'){
              percent = money * 0.02;
+             money += percent;
+         }else if (type == 'X'){
+             percent = money * 0.05;
              money += percent;
          }
         int result = (int)money;
