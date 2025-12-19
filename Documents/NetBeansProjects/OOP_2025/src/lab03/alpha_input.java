@@ -20,19 +20,17 @@ public class alpha_input {
             if (alpha == 'z'){
                 break;
             }
-            if ("aeiou".indexOf(alpha) == -1 & Character.isDigit(alpha) == false){
-                result += alpha;
-            }
-            if (Character.isDigit(alpha)){
-                System.out.println("Invalid input. Only lowercase a-z are allowed.");
-            }else{
+            if (alpha >= 'a' & alpha <= 'y'){
                 sum += alpha;
+                if ("aeiou".indexOf(alpha) == -1){
+                    result += alpha;
+                }
             }
+           else{
+                System.out.println("Invalid input. Only lowercase a-z are allowed.");
+           }
             
         }
         System.out.println("All characters entered: " + sum);
         System.out.println("Consonants only: " + result);
-        
-        
-    }
 }
