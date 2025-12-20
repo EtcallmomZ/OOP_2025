@@ -34,3 +34,4 @@ public class alpha_input {
         System.out.println("All characters entered: " + sum);
         System.out.println("Consonants only: " + result);
 }
+}
