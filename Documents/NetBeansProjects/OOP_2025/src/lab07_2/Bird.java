@@ -9,20 +9,21 @@ package lab07_2;
  * @author eiwei
  */
 public abstract class  Bird implements Flyable{
+    private double wingSize;
     private double height;
     private double weight;
-    private double wingSize;
+   
     
     public Bird(){
         this.wingSize = 0.0;
         this.weight = 0.0;
-        this.weight = 0.0;
+        this.height = 0.0;
     }
     
     public Bird(double wingSize,double weight,double height){
         this.wingSize = wingSize;
         this.weight = weight;
-        this.weight = height;
+        this.height = height;
     } 
 
     public double getHeight() {
@@ -50,11 +51,11 @@ public abstract class  Bird implements Flyable{
     }
     
     public void eat(double food){
-        if (food <=0) {
-            System.out.println("Input cannot be negative number.");
-        }
-        else{
+        if (food > 0) {
             this.weight += food;
+         }
+        else{
+            System.out.println("Input cannot be negative number.");
         }
   
     }
