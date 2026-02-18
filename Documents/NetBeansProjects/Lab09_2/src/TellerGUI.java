@@ -22,7 +22,7 @@ public class TellerGUI implements ActionListener {
     
     public TellerGUI(){
         
-        acc = new Account(6000, "User");   // สร้าง Account
+        acc = new Account(6000, "User");
         
         fr = new JFrame("Teller GUI");
         fr.setLayout(new GridLayout(4,1));
