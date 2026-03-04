@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lab02/Lab02.iml" filepath="$PROJECT_DIR$/Lab02/Lab02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab08_4/Lab08_4.iml" filepath="$PROJECT_DIR$/Lab08_4/Lab08_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab09_2/Lab09_2.iml" filepath="$PROJECT_DIR$/Lab09_2/Lab09_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab10/Lab10.iml" filepath="$PROJECT_DIR$/Lab10/Lab10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab8_1/Lab8_1.iml" filepath="$PROJECT_DIR$/Lab8_1/Lab8_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab8_2/Lab8_2.iml" filepath="$PROJECT_DIR$/Lab8_2/Lab8_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab9_1/Lab9_1.iml" filepath="$PROJECT_DIR$/Lab9_1/Lab9_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NetBeansProjects.iml" filepath="$PROJECT_DIR$/.idea/NetBeansProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_2025/OOP_2025.iml" filepath="$PROJECT_DIR$/OOP_2025/OOP_2025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/lab11.iml" filepath="$PROJECT_DIR$/lab11/lab11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab8_3/lab8_3.iml" filepath="$PROJECT_DIR$/lab8_3/lab8_3.iml" />
+    </modules>
+  </component>
+</project>
