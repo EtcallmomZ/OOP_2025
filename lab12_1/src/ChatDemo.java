@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import java.io.*; // import when you want to write and read a file
 
 
-public class ChatDemo implements ActionListener ,WindowListener{
+public class ChatDemo implements ActionListener{
     private JFrame fr;
     private JTextArea textarea;
     private JTextField textfield;
@@ -69,7 +69,16 @@ public class ChatDemo implements ActionListener ,WindowListener{
         reset.addActionListener(this);
         
         // add WindowListener for JFrame
-        fr.addWindowListener(this);
+        fr.addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent e) {
+                try(FileWriter fw = new FileWriter("ChatDemo.dat")){
+                    fw.write(textarea.getText());
+                }
+                catch(IOException ex){
+                System.out.println(ex);
+                }
+        }
+        });
         
         
         // Jframe settings
@@ -92,43 +101,6 @@ public class ChatDemo implements ActionListener ,WindowListener{
         else{
             textarea.setText("");
         }
-        }
-    
-    //logic for WindowListener so every method must write to make it can work
-    @Override
-    public void windowOpened(WindowEvent e) {
     }
-
-    // when closing program will creat ChatDemo.dat to record a chat from JTextArea
-    @Override
-    public void windowClosing(WindowEvent e) {
-        try(FileWriter fw = new FileWriter("ChatDemo.dat")){
-            fw.write(textarea.getText());
-        }
-        catch(IOException ex){
-            System.out.println(ex);
-        }
-    }
-
-    @Override
-    public void windowClosed(WindowEvent e) {
-    }
-
-    @Override
-    public void windowIconified(WindowEvent e) {
-    }
-
-    @Override
-    public void windowDeiconified(WindowEvent e) {
-    }
-
-    @Override
-    public void windowActivated(WindowEvent e) {
-    }
-
-    @Override
-    public void windowDeactivated(WindowEvent e) {
-    }
-    
 }
                             
