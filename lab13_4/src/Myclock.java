@@ -24,8 +24,8 @@ public class Myclock extends JLabel implements Runnable{
         this.setHorizontalAlignment(CENTER);
         
         
-        this.addMouseListener(new MouseAdapter()
-        {public void mouseClicked(MouseEvent e){
+        this.addMouseListener(new MouseAdapter({
+            public void mouseClicked(MouseEvent e){
                 pause = !pause;
             }
         });
@@ -59,3 +59,4 @@ public class Myclock extends JLabel implements Runnable{
         
     }
 }
+
