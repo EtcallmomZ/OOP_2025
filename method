@@ -1,0 +1,10 @@
+// textfield and textarea
+JTextArea text = new JTextArea();
+text.getText(); เป็นการดึงค่าออกมา
+text.setText(""); เป็นการเขียนทับข้อความ (ของเก่าหาย)
+text.append("Hello\n"); เขียนต่อจากที่มี
+text.setEditable(false); ทำให้เขียนข้อความไม่ได้
+text.getLineCount() รับค่าว่า textarea มีกี่บรรบัด
+# สำคัญมาก อย่าลืม  ! ลงทะเบียนให้ปุ่มด้วย
+.addActionListener(this);
+
