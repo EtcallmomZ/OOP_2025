@@ -15,3 +15,11 @@ fr.pack();
 ** fr.setVisible(true); **
 fr.setDefaultCloseOperation(EXIT_ON_CLOSE); 
 หรือ ถ้าไม่อยากให้กดปิดให้เขียน DO_NOTHING_ON_CLOSE
+
+//ArrayList
+import java.util.*;
+ArrayList<String> list = new ArrayList<>(); //Interger,Double
+list.add(); เพิ่มค่าใน list
+list.size(); เช็คจำนวนสมาชิก
+list.clear(); เคลียร์ค่าใน list
+list.isEmpty(); เช็คว่าค่าว่างหรือเปล่า
