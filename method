@@ -23,3 +23,23 @@ list.add(); เพิ่มค่าใน list
 list.size(); เช็คจำนวนสมาชิก
 list.clear(); เคลียร์ค่าใน list
 list.isEmpty(); เช็คว่าค่าว่างหรือเปล่า
+
+//JRadioButton
+JRadioButton a = new JRadioButton("a"); ประกาศตัวแปร
+JRadioButton b = new JRadioButton("b");
+ButtonGroup g = new ButtonGroup(); สร้าง Group ให้ปุ่มไม่งั้นมันจะเลือกได้สองอัน
+g.add(a);
+g.add(b);
+a.isSelected(); เอาไว้ใส่ใน actionPerformed เช็คว่าปุ่มโดนเลือกหรือเปล่า
+a.setSelected(true); ตั้งว่าเลือกค่าไว้เป็น default
+
+//JCheckBox
+foodBox = new JCheckBox("Food");
+foodBox.isSelected();
+
+//JScrollPane
+JTextArea textArea = new JTextArea(10,30); 
+JScrollPane scroll = new JScrollPane(textArea); ใส่เข้าไปอีกทีนึง
+
+
+
