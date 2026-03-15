@@ -31,7 +31,7 @@ public class PoringConstructure implements ActionListener {
         fr.addWindowListener(new WindowAdapter(){
             public void windowClosing(WindowEvent e){
                 for (Poring p : porings) {
-                    p.stopPoring();
+                    p.dispose();
                 }
             }
         }
